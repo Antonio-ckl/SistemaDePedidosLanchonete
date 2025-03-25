@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nome', '80')->nullable(false);
             $table->string('endereco', '50')->nullable(false);
             $table->string('telefone','13')->nullable(false);
-            $table->string('cpf', '13')->nullable(false);
+            $table->string('cpf', '15')->nullable(false);
             $table->string('email', '70')->nullable(false);
             $table->string('password', '16')->nullable(false);
         });
