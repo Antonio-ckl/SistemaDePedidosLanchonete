@@ -22,7 +22,7 @@
                     <label for="email" class="form-label">Nome</label>
                     <input type="text"
                         style="border-radius: 100px; border-inline-color: black; border-block-color: black"
-                        class="form-control" id="nome" name="nome" placeholder="Ex.: Robertinho"
+                        class="form-control" id="nome" name="nome" placeholder="Ex.: X-Tudão"
                         wire:model.defer="nome">
                 </div>
 
