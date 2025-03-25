@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{{ $title ?? 'Page Title' }}</title>
-    </head>
-    <body>
-        {{ $slot }}
-    </body>
-</html>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
@@ -24,54 +13,34 @@
 
 <body style="background-color: #f8f9fa">
 
-  @if(auth()->check())
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Lanchonete</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Abas</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/create/cliente">Cadastrar Cliente</a></li>
-                        <li><a class="dropdown-item" href="/"></a></li>
+    @if (auth()->check())
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Lanchonete</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Abas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/create/cliente">Cadastrar Cliente</a></li>
+                            <li><a class="dropdown-item" href="/"></a></li>
+                        </ul>
+                        </li>
                     </ul>
-                    </li>
-                </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-@endif
-
-
-
-
-
-
-
-
-
-
-
-
+        </nav>
+    @endif
     <div class="container">
         {{ $slot }}
     </div>
-
-
-
-
     <footer style="height: 76px" class="py-3 bg-dark">
         <p class="text-center text-white">© 2025 Lanchonete com Todos os direitos reservados</p>
-    </footer>
-
-
-
-
-
-
+   </footer>
     @livewireStyles
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

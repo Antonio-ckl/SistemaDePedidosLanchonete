@@ -22,7 +22,7 @@
                     <label for="email" class="form-label">Nome</label>
                     <input type="text"
                         style="border-radius: 100px; border-inline-color: black; border-block-color: black"
-                        class="form-control" id="nome" name="nome" placeholder="Ex.: Robertinho"
+                        class="form-control" id="nome" name="nome" placeholder="Ex.: X-Tudão"
                         wire:model.defer="nome">
                 </div>
 
@@ -37,7 +37,7 @@
 
                 <div class="mb-3">
                     <label for="rm" class="form-label">valor</label>
-                    <input type="integer"
+                    <input type="decimal"
                         style="border-radius: 100px; border-inline-color: black; border-block-color: black"
                         class="form-control" id="valor" name="valor" placeholder="Ex.: 16,50"
                         wire:model.defer="valor">
