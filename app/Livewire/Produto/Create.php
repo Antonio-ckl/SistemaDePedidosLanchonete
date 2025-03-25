@@ -17,6 +17,8 @@ class Create extends Component
             'ingredientes'=>$this->ingredientes,
             'valor'=>$this->ingredientes
         ]);
+        session()->flash('success','Cadastro Concluido');
+
     }
     public function render()
     {
