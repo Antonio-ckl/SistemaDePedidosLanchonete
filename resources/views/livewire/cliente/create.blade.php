@@ -10,7 +10,7 @@
 
 
     <div style="width: 50%; margin-left: 25%; margin-bottom: 25px" class="card">
-        <h5 style="text-align: center" class="card-header">Cadastro de Aluno</h5>
+        <h5 style="text-align: center" class="card-header">Cadastro de Cliente</h5>
 
         <div class="card-body">
 
@@ -55,15 +55,15 @@
                     <label for="cpf" class="form-label">email</label>
                     <input type="text"
                         style="border-radius: 100px; border-inline-color: black; border-block-color: black"
-                        class="form-control" id="email" name="email" placeholder="Ex.: "
-                        wire:model.defer="cpf">
+                        class="form-control" id="email" name="email" placeholder="Ex.: SeuEmail@gmail.com"
+                        wire:model.defer="email">
                 </div>
 
                 <div class="mb-3">
-                    <label for="senha" class="form-label">senha</label>
+                    <label for="password" class="form-label">password</label>
                     <input type="password"
                         style="border-radius: 100px; border-inline-color: black; border-block-color: black"
-                        class="form-control" id="senha" name="senha" placeholder="Ex.: batman123"
+                        class="form-control" id="password" name="password" placeholder="Ex.: ......."
                         wire:model.defer="password">
                 </div>
 
